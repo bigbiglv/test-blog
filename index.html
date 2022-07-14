@@ -5,11 +5,20 @@
     <link rel="icon" href="/test-blog/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite App</title>
-    <script type="module" crossorigin src="/test-blog/assets/index.c061a822.js"></script>
-    <link rel="stylesheet" href="/test-blog/assets/index.e523ab8a.css">
+    <script type="module" crossorigin src="/test-blog/assets/index.fcfeccfd.js"></script>
+    <link rel="stylesheet" href="/test-blog/assets/index.562b27cb.css">
   </head>
   <body>
     <div id="app"></div>
     
   </body>
 </html>
+<script>
+  (function(){
+    let redirect = sessionStorage.redirect;
+    delete sessionStorage.redirect;
+    if (redirect && redirect !== location.href) {
+      history.replaceState(null, null, redirect);
+    }
+  })()
+</script>
