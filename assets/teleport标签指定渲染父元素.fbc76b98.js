@@ -1,0 +1,5 @@
+import{u as t,o as a,c as e,d as n}from"./index.6fbb99ea.js";const l={class:"markdown-body"},o=n(`<h4 id="teleport%E6%A0%87%E7%AD%BE%E6%8C%87%E5%AE%9A%E6%B8%B2%E6%9F%93%E7%88%B6%E5%85%83%E7%B4%A0" tabindex="-1"><a class="header-anchor" href="#teleport%E6%A0%87%E7%AD%BE%E6%8C%87%E5%AE%9A%E6%B8%B2%E6%9F%93%E7%88%B6%E5%85%83%E7%B4%A0"><span aria-hidden="true">#</span></a> teleport\u6807\u7B7E\u6307\u5B9A\u6E32\u67D3\u7236\u5143\u7D20</h4><hr><ul><li>\u8BA9\u7EC4\u4EF6\u4F20\u9001\u5230\u6307\u5B9A\u7236\u5143\u7D20\u4E0B\u8FDB\u884C\u6E32\u67D3</li><li>\u5F39\u7A97\u7EC4\u4EF6\u4F20\u9001\u5230body\u4E0B</li></ul><pre><code class="hljs language-html"><span class="hljs-tag">&lt;<span class="hljs-name">teleport</span> <span class="hljs-attr">to</span>=<span class="hljs-string">&quot;body&quot;</span>&gt;</span>
+\xA0 \u7EC4\u4EF6\u7684html\u7ED3\u6784
+\xA0 ...
+<span class="hljs-tag">&lt;/<span class="hljs-name">teleport</span>&gt;</span>
+</code></pre>`,4),r=[o],m=[],_={__name:"teleport\u6807\u7B7E\u6307\u5B9A\u6E32\u67D3\u7236\u5143\u7D20",setup(c,{expose:s}){return s({frontmatter:{meta:[]}}),t({meta:[]}),(h,d)=>(a(),e("div",l,r))}};export{_ as default,m as meta};
