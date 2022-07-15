@@ -14,14 +14,14 @@
   </body>
 </html>
 <script>
-  (function(){
-    let redirect = sessionStorage.redirect;
-    console.log('拿到sessionStorage中的redirect：11', redirect);
-    delete sessionStorage.redirect;
-    console.log('删除sessionStorage中的redirect：', sessionStorage.redirect);
-    console.log('条件',redirect,location.href)
-    if (redirect && redirect !== location.href) {
-      history.replaceState(null, null, redirect);
-    }
-  })()
+  // (function(){
+  //   let redirect = sessionStorage.getItem('redirect');
+  //   console.log('拿到sessionStorage中的redirect：', redirect);
+  //   sessionStorage.removeItem('redirect');
+  //   console.log('删除sessionStorage中的redirect：', sessionStorage.redirect);
+  //   console.log('条件',redirect,location.href)
+  //   if (redirect && redirect !== location.href) {
+  //     history.replaceState(null, null, redirect);
+  //   }
+  // })()
 </script>
