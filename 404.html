@@ -6,18 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>404</title>
   <script>
-    console.log('---------------到了404页面----------------');
-    sessionStorage.setItem('redirect',location.href)
-    console.log('保存sessionStorage中的redirect：', sessionStorage.redirect,location.href);
-    console.log('session数据',sessionStorage)
-    let redirect = sessionStorage.getItem('redirect');
-    console.log('拿到sessionStorage中的redirect：', redirect);
-    sessionStorage.removeItem('redirect');
-    console.log('删除sessionStorage中的redirect：', sessionStorage.redirect);
-    console.log('条件',redirect,location.href)
-    if (redirect && redirect !== location.href) {
-      history.replaceState(null, null, redirect);
-    }
+    sessionStorage.redirect = location.href;
   </script>
 </head>
 <body>
