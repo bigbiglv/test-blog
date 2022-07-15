@@ -5,7 +5,7 @@
     <link rel="icon" href="/test-blog/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite App</title>
-    <script type="module" crossorigin src="/test-blog/assets/index.fcfeccfd.js"></script>
+    <script type="module" crossorigin src="/test-blog/assets/index.fa8f2c01.js"></script>
     <link rel="stylesheet" href="/test-blog/assets/index.562b27cb.css">
   </head>
   <body>
@@ -16,7 +16,10 @@
 <script>
   (function(){
     let redirect = sessionStorage.redirect;
+    console.log('拿到sessionStorage中的redirect：11', redirect);
     delete sessionStorage.redirect;
+    console.log('删除sessionStorage中的redirect：', sessionStorage.redirect);
+    console.log('条件',redirect,location.href)
     if (redirect && redirect !== location.href) {
       history.replaceState(null, null, redirect);
     }
